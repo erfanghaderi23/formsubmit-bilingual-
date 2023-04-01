@@ -1,0 +1,217 @@
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+a:link {
+  text-decoration: none;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(255, 255, 255), rgb(13, 15, 15));
+  font-family: "Sansita Swashed", cursive;
+}
+.center {
+  position: relative;
+  padding: 1.2rem 3rem;
+  background: #fff;
+  border-radius: 0.8rem;
+}
+.center h1 {
+  font-size: 2em;
+  /* border-left: 3px solid rgb(23, 138, 253); */
+   padding: 6px;
+  background: -webkit-linear-gradient(rgb(16, 16, 17), rgb(231, 230, 245));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  margin-top: 1rem;
+  font-weight: bolder;
+  /* padding-left: 10px; */
+}
+
+
+#submit > div:nth-child(8){
+  margin-bottom: 0.1rem;
+
+}
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 2.5rem;
+  margin-bottom: 1.2rem;
+
+}
+
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 4px;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+}
+.center .inputbox:last-child {
+  margin: 0.6rem 0;
+}
+.center .inputbox small {
+  position: absolute;
+  font-size: 5rem;
+  transition: 0.7s;
+  font-family: sans-serif;
+
+}
+
+
+.center .inputbox input:focus ~ small,
+.center .inputbox input:valid ~ small {
+  transform: translateX(-2px) translateY(-23px);
+  font-size: 0.9rem;
+  color: rgb(243, 11, 11);
+
+
+}
+.center .inputbox [type="submit"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+ padding: 0.7rem;
+  border-radius: 2
+  rem;
+  font-size: 1rem;
+}
+.center .inputbox:hover [type="submit"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+
+#inputbox{
+    margin-bottom: 0.1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+input:focus {
+  border: 2px solid #06d132!important;
+}
+small {
+  color: #3cec10;
+  cursor: pointer;
+}
+
+
+
+
+ .password + .unmask {
+  position: absolute;
+  right: 10%;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  cursor:pointer;
+  border: none;
+  font-family:'fontawesome';
+  font-size:14px;
+  line-height:24px;
+  -webkit-appearance:none;
+  outline:none
+}
+.password + .unmask:before {
+  content: "\f06e";
+  position:absolute;
+  top:0; left:0;
+  width: 25px;
+  height: 25px;
+  background: rgba(205,205,205,0.2);
+  z-index:1;
+  color:#aaa;
+  border:2px solid;
+  border-radius: 50%;
+}
+.password[type="text"] + .unmask:before {
+ content:"\f070";
+  background: rgba(105,205,255,0.2);
+  color:#06a
+}
+#valid{
+  font-size:12px;
+  color:rgb(243, 26, 26);
+  height:15px
+}
+#strong{
+  height: 20px;
+  font-size:12px;
+  color:rgb(209, 22, 22);
+  text-transform:capitalize;
+  background:rgba(205, 205, 205, 0.1);
+  border-radius:5px;
+  overflow:hidden
+}
+
+#strong span{
+  display:block;
+  box-shadow:0 0 0 #fff inset;
+  height:100%;
+  transition:all 0.8s
+}
+#strong .weak{
+   box-shadow:5em 0 0 rgb(250, 182, 182) inset;
+}
+#strong .medium{
+   color:rgb(238, 140, 12);
+   box-shadow:10em 0 0 rgb(243, 213, 174) inset
+}
+#strong .strong{
+   color:rgb(45, 184, 45);
+   box-shadow:50em 0 0 rgb(156, 235, 156) inset
+}
+
+/* #ln_submit{
+  padding: 0.7rem;
+
+} */
+
+
+/*
+.dv-language{
+ display: flex;
+ justify-content: center;
+align-items: center;
+  direction: rtl !important;
+  background-color: #333;
+}
+a{
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-weight: bold;
+  background: #555656;
+  font-size: 12px;
+}
+a.active{
+  background: red;
+}
+
+.form{
+  margin-top: 10px!important;
+}
+ */

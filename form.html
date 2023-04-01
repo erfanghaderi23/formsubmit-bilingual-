@@ -1,0 +1,67 @@
+
+ <!DOCTYPE html>
+ <html lang="fa">
+ <head>
+     <meta charset="UTF-8">
+     <title>Document</title>
+     <link rel="stylesheet" href="assets/css/form.css">
+ </head>
+ <body>
+   <div class="center">
+       <!-- <h2 id="lang"> select your language:</h2> -->
+       <div class="dv-language">
+        <a id="fa" language='persian' class="reload " href="#fa" >persian</a> /
+        <a id="en" language='English' class="reload" href="#en">English</a> 
+       </div>
+      <h1 id="ln_header">Welcome</h1>
+     <form id="submit" class="form" action="submit">
+         <div class="form-field name form-field inputbox">
+             <input type="text" name="Firstname" id="Firstname" autocomplete="off">
+             <small id="ln_Firstname">First name</small>
+              <small></small> 
+         </div>
+         <div class="form-field name form-field inputbox">
+             <input type="text" name="Lastname" id="Lastname" autocomplete="off">
+             <small id="ln_Lastname">Last name</small>
+              <small></small> 
+           
+         </div>
+ 
+         <div class="form-field inputbox">
+             <input type="text" name="email" id="email" autocomplete="off">
+             <small id="ln_Email">Email</small>
+         </div>
+         <div class="form-field inputbox">
+           <input type="text"> 
+           <small id="ln_address" style="color: rgb(84, 218, 32);">address(Optional)</small>
+       </div>
+       <p>
+        <div class="form-field inputbox">
+        <input type="password" value=""  id="p" class="password">
+        <small id="ln_Password">Password:</small>
+        </div>
+      
+        <p>     
+            <div class="form-field inputbox">
+            <input type="password" value=""  id="p-c" class="password">
+            <small id="ln_cp">Confirm Password:</small>
+            </div>
+            <input type="checkbox" onclick="myFunction()"> <strong id="ln_show_ps">Show Password</strong>   
+          <div id="strong"><span></span></div>
+          <div id="valid"></div>
+          </p>
+       
+         <div class="form-field inputbox">
+             <button id="ln_submit" class="submit-email" type="submit"></button>
+         </div>
+     </form> 
+ </div>
+    
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="assets/js/form.js"></script>
+ <script src="assets/js/languages.js"></script>
+ </body>
+ </html>
+
+
